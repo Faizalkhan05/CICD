@@ -12,7 +12,6 @@ on:
       - 'README.md'
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
