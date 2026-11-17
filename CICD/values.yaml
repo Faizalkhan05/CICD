@@ -1,6 +1,6 @@
 image:
   repository: nginx
-  tag: latest
+  tag: v2
   labels:
     app: nginx  
   selector:
