@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: crown
-        image: {{ Values.image.repository }}/myapp:{{ Values.image.tag }}
+        image: {{ Values.image.repository }}:{{ Values.image.tag }}
         ports:
         - containerPort: 80
