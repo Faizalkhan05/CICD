@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: crown
-        image: nginx:alpine
+        image: {{ Values.image.repository }}/myapp:{{ Values.image.tag }}
         ports:
         - containerPort: 80
