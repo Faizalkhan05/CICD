@@ -1,6 +1,6 @@
 image:
   repository: faizal05/myapp
-  tag: "44308432560"
+  tag: "44311598163"
   labels:
     app: nginx
   selector:
