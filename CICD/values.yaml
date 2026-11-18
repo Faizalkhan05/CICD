@@ -1,8 +1,8 @@
 image:
-  repository: nginx
-  tag: "44121500945"
+  repository: faizal05/myapp
+  tag: 44121500945
   labels:
-    app: nginx  
+    app: nginx
   selector:
     matchLabels:
       app: myapp
