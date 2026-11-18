@@ -1,19 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
-name: demo-deployment
+  name: demo-deployment
+  namespace: new
+  labels:
+    app: nginx
+
 spec:
   replicas: 2
+
   selector:
     matchLabels:
       app: nginx
+
   template:
     metadata:
       labels:
         app: nginx
+
     spec:
       containers:
-      - name: crown
-        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        ports:
-      - containerPort: 80
+        - name: crown
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: 80
